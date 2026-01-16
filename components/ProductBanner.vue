@@ -42,7 +42,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await this.$axios.$get('http://127.0.0.1:8000/api/v1/all?category=womens-bags');
+      const response = await this.$axios.$get('https://admin.swascabs.com/api/v1/all?category=womens-bags');
       const products = response.data.result.data;
       this.loading = false;
 
